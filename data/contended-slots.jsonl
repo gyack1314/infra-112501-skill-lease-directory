@@ -1,0 +1,8 @@
+{"timestamp": 1, "type": "register", "data": {"site": "west", "instance": "vision", "boot": 1, "skill": "scene", "tenants": ["lab"], "input": "raw", "output": "fmt1", "calibration": "c7", "until": 28, "slots": 1}}
+{"timestamp": 2, "type": "register", "data": {"site": "west", "instance": "pose", "boot": 1, "skill": "pose", "tenants": ["lab"], "input": "fmt1", "output": "pose", "calibration": "c7", "until": 28, "slots": 1}}
+{"timestamp": 3, "type": "reserve", "data": {"session": "run-31", "tenant": "lab", "sites": ["west"], "skills": ["scene", "pose"], "same_calibration": true, "ready_by": 9}}
+{"timestamp": 3, "type": "reserve", "data": {"session": "run-32", "tenant": "lab", "sites": ["west"], "skills": ["scene", "pose"], "same_calibration": true, "ready_by": 9}}
+{"timestamp": 4, "type": "reserve", "data": {"session": "run-31", "tenant": "lab", "sites": ["west"], "skills": ["scene", "pose"], "same_calibration": true, "ready_by": 9}}
+{"timestamp": 5, "type": "health", "data": {"instance": "pose", "boot": 1, "state": "unknown"}}
+{"timestamp": 6, "type": "inspect", "data": {"session": "run-31"}}
+{"timestamp": 29, "type": "reassign", "data": {"session": "run-31"}}

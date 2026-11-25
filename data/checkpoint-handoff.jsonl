@@ -1,0 +1,14 @@
+{"timestamp": 1, "type": "register", "data": {"site": "east", "instance": "vision", "boot": 1, "skill": "scene", "tenants": ["lab"], "input": "raw", "output": "fmt1", "calibration": "c7", "until": 35, "slots": 1}}
+{"timestamp": 2, "type": "register", "data": {"site": "east", "instance": "pose-a", "boot": 1, "skill": "pose", "tenants": ["lab"], "input": "fmt1", "output": "pose", "calibration": "c7", "until": 35, "slots": 1}}
+{"timestamp": 3, "type": "register", "data": {"site": "east", "instance": "pose-b", "boot": 1, "skill": "pose", "tenants": ["lab"], "input": "fmt2", "output": "pose", "calibration": "c8", "until": 35, "slots": 2}}
+{"timestamp": 4, "type": "reserve", "data": {"session": "run-17", "tenant": "lab", "sites": ["east"], "skills": ["scene", "pose"], "same_calibration": true, "ready_by": 10}}
+{"timestamp": 5, "type": "start", "data": {"session": "run-17", "stage": 1, "assignment": 1, "instance": "vision", "boot": 1}}
+{"timestamp": 6, "type": "checkpoint", "data": {"session": "run-17", "stage": 1, "assignment": 1, "instance": "vision", "boot": 1, "checkpoint": "cp17", "format": "fmt1", "calibration": "c7"}}
+{"timestamp": 7, "type": "revoke", "data": {"instance": "pose-a", "boot": 1}}
+{"timestamp": 8, "type": "reassign", "data": {"session": "run-17"}}
+{"timestamp": 9, "type": "inspect", "data": {"session": "run-17"}}
+{"timestamp": 10, "type": "renew", "data": {"instance": "pose-a", "boot": 1, "until": 55}}
+{"timestamp": 11, "type": "register", "data": {"site": "east", "instance": "pose-a", "boot": 2, "skill": "pose", "tenants": ["lab"], "input": "fmt1", "output": "pose", "calibration": "c7", "until": 50, "slots": 1}}
+{"timestamp": 12, "type": "reassign", "data": {"session": "run-17"}}
+{"timestamp": 13, "type": "start", "data": {"session": "run-17", "stage": 2, "assignment": 1, "instance": "pose-a", "boot": 1}}
+{"timestamp": 14, "type": "inspect", "data": {"session": "run-17"}}

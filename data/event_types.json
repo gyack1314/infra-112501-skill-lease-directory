@@ -1,0 +1,13 @@
+[
+  "checkpoint",
+  "finish",
+  "health",
+  "inspect",
+  "reassign",
+  "register",
+  "renew",
+  "reserve",
+  "revoke",
+  "start",
+  "stop"
+]
